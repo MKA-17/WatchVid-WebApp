@@ -1,0 +1,72 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the main styles for the navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the YouTube logo */
+.youtube-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000; /* YouTube's red color */
+}
+
+/* Style the search bar */
+.search-bar {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Style the search button */
+.btn-primary {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style the user avatar image */
+.round-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Style the Create Video button */
+.create-video-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+/* Add more specific styles if needed, and adjust colors, sizes, and padding as desired */
+.channel-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+  }
+  .channel-avatar:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}

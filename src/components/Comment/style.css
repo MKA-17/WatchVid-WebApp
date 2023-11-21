@@ -1,0 +1,46 @@
+/* Default styles */
+.comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comment-details {
+  flex: 1;
+  max-width: 80%; /* Adjust max-width as needed */
+}
+
+/* Faint font style */
+.faint-font {
+  color: #999;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .comment {
+    flex-direction: column;
+  }
+
+  .comment-details {
+    max-width: 100%; /* Use full width in smaller screens */
+  }
+}
+
+/* Delete button style */
+button {
+  padding: 8px 12px;
+  background-color: #ff6347; /* Tomato */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff3e27; /* Lighter shade on hover */
+}

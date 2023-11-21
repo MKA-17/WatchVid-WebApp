@@ -1,0 +1,101 @@
+/* Sidebar button */
+.Sidebar-button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Sidebar */
+  .App-sidebar {
+    width: 100%; /* Occupy full width initially */
+    max-width: 250px; /* Maximum width on larger screens */
+    margin-right: 20px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    position: sticky;
+    top: 60px; /* Adjust based on your header height */
+    height: calc(100vh - 60px); /* Considering the header height */
+    overflow-y: auto;
+  }
+  
+  /* Sidebar h2 */
+  .App-sidebar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Sidebar ul */
+  .App-sidebar ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  /* Sidebar li a */
+  .App-sidebar li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Sidebar li a:hover */
+  .App-sidebar li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sidebar button in the sidebar */
+  .App-sidebar-button {
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Videos grid */
+  .App-videos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    max-height: 70vh; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  /* Scroller for Subscriptions List */
+  .App-subscriptions-list {
+    max-height: 30vh; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  /* Subscription */
+  .App-subscription {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+  
+  /* Subscription image */
+  .App-subscription img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* To create a round avatar */
+    margin-right: 10px;
+  }
+  
+  /* Subscription info */
+  .App-subscription-info {
+    flex: 1; /* Takes remaining space */
+  }
+  
+  /* Subscription info h3 */
+  .App-subscription-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  

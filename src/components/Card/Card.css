@@ -1,0 +1,89 @@
+.App-video {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App-video img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .App-video-info {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .App-video-info .channel-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .App-video-info .channel-details .channel-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .App-video-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .App-video-info p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media (max-width: 1200px) {
+    .App-video {
+      width: calc(25% - 10px); /* Display 4 cards per row */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .App-video {
+      width: calc(33.33% - 10px); /* Display 3 cards per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .App-video {
+      width: calc(50% - 10px); /* Display 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .App-video {
+      width: 100%; /* Display 1 card per row on smaller screens */
+    }
+  }
+  .App-video {
+    width: 250px; /* Fixed width for the card */
+    height: 300px; /* Fixed height for the card */
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Example border for the card */
+    border-radius: 4px; /* Example border-radius for the card */
+  }
+  
+  /* Keep the image within the fixed card dimensions */
+  .App-video img {
+    width: 100%; /* Take full width of the container */
+    height: 70%; /* Set a specific height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-top-left-radius: 4px; /* Example rounded corners for the image */
+    border-top-right-radius: 4px; /* Example rounded corners for the image */
+  }
+  
+  /* The rest of your CSS remains unchanged */
+  

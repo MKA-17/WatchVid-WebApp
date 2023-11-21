@@ -1,0 +1,200 @@
+/* App */
+.App {
+  font-family: sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* App header */
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.App-header img {
+  width: 150px;
+  height: 50px;
+}
+
+.App-search {
+  display: flex;
+  align-items: center;
+}
+
+.App-search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.App-search button {
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.App-account {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.App-account img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* App main */
+.App-main {
+  display: flex;
+}
+
+/* App sidebar */
+.App-sidebar {
+  width: 100%; /* Occupy full width initially */
+  max-width: 250px; /* Maximum width on larger screens */
+  margin-right: 20px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  position: sticky;
+  top: 60px; /* Adjust based on your header height */
+  height: calc(100vh - 60px); /* Considering the header height */
+  overflow-y: auto;
+}
+
+.App-sidebar button {
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.App-sidebar h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.App-sidebar ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.App-sidebar li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.App-sidebar li a:hover {
+  text-decoration: underline;
+}
+
+/* App videos */
+.App-videos {
+  flex: 1;
+}
+
+.App-videos h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.App-videos-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.App-videos-filters select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.App-videos-gridy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:baseline;
+  gap: 5px;
+  max-height: 70vh; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+/* Additional smaller screen adjustments can be made if needed */
+
+/* Scroller for Subscriptions List */
+.App-subscriptions-list {
+  max-height: 30vh; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+/* Updated styles for App-subscription */
+.App-subscription {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.App-subscription img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* To create a round avatar */
+  margin-right: 10px;
+}
+
+.App-subscription-info {
+  flex: 1; /* Takes remaining space */
+}
+
+.App-subscription-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .App-sidebar {
+      max-width: 100%; /* Occupy full width on smaller screens */
+  }
+}
+
+/* Additional adjustments for smaller screens if needed */
+@media (max-width: 600px) {
+  .App-sidebar {
+      padding: 10px 5px; /* Adjust the padding for smaller screens */
+  }
+
+  .App-subscription {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .App-subscription img {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+.faint-text {
+  opacity: 0.5; /* Adjust the value as needed */
+}
+/* Add this CSS to your stylesheet */
+ 
