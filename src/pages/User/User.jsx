@@ -130,13 +130,13 @@ export default function User() {
     // console.log(getUserData)
   }, [getUserData]);
 
-  useEffect(() => {
-    if (!auth.token) {
-      // If the user is already authenticated, redirect to the home page
-      navigate("/login");
-      // You can also return a loading indicator or a message
-    }
-  }, [auth.token]);
+  // useEffect(() => {
+  //   if (!auth.token) {
+  //     // If the user is already authenticated, redirect to the home page
+  //     navigate("/login");
+  //     // You can also return a loading indicator or a message
+  //   }
+  // }, [auth.token]);
 
   return (
     <>
@@ -187,14 +187,17 @@ export default function User() {
               ? getVideosData.videos?.map((video, index) => (
                   <BootstrapCard key={video._id+index} className="mb-3">
                     <Card data={video} />
-                    <Button
-                      variant="danger"
-                      size="sm"
-                      onClick={() => handleDelete(video._id)}
-                      className="mt-2 float-end"
-                    >
-                      Delete
-                    </Button>
+                     {
+                      auth?.user?.id ===  video?.userId?._id && 
+                        <Button
+                          variant="danger"
+                          size="sm"
+                          onClick={() => handleDelete(video._id)}
+                          className="mt-2 float-end"
+                        >
+                          Delete
+                        </Button>
+                    }
                   </BootstrapCard>
                 ))
               : "No Video Uploaded by this Channel Yet!"

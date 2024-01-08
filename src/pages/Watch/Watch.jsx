@@ -196,14 +196,15 @@ const Watch = () => {
   };
 
   const HandleReaction = (videoId, reactionType) => {
-    if (!auth.token) return alert("Please Login first to Subscribe");
+    if (!auth.token) return alert("Please Login first to React");
     reactVideoMutation.mutate({ videoId, reactionType });
   };
 
   const HandleComment = (e, commentTxt) => {
-    if (!auth.token) return alert("Please Login first to Subscribe");
-    if (e.key === "Enter" && commentTxt.trim())
+    if (e.key === "Enter" && commentTxt.trim()){
+    if (!auth.token) return alert("Please Login first to Comment");
       postCommentMutation.mutate({ text: commentTxt });
+    }
   };
 
   const HandleShare = async () => {
