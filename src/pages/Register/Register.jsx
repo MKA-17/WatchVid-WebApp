@@ -44,7 +44,11 @@ export default function Register() {
     },
     onSuccess: (data, variables, context) => {
       // console.log("Inside RegisterForm mutation: ", data, variables);
+
       alert(data.message);
+      if(data.success)
+        navigate("/login")
+
     },
     onError: (error, variables, context) => {
       console.log("error: ", error.message);
