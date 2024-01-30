@@ -30,7 +30,7 @@ export default function Login() {
       ).json();
     },
     onSuccess: (data, variables, context) => {
-      // console.log("Inside LoginForm mutation: ", data, variables);
+      console.log("Inside LoginForm mutation: ", data, variables);
 
       if (data.isPassword) {
         setAuth((prev) => {

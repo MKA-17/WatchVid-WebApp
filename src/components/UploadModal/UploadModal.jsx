@@ -9,6 +9,7 @@ import {
 } from "firebase/storage";
 import { useMutation } from "@tanstack/react-query";
 import { useAuth } from "../../store/auth";
+import { app } from "../../utils/firebase";
 
 function UploadModal({ show, setShow }) {
   const { auth } = useAuth();
@@ -83,7 +84,7 @@ function UploadModal({ show, setShow }) {
     // console.log("uploadFiles: ", uploadFiles)
   };
   const UploadFileToFirebase = (file, fileType) => {
-    const storage = getStorage();
+    const storage = getStorage(app);
     const storageRef = ref(storage, new Date().getTime() + file.name);
     const uploadTask = uploadBytesResumable(storageRef, file);
 

@@ -11,6 +11,7 @@ import {
 import "../../assets/profile.png";
 import { useNavigate } from "react-router-dom";
 import { useHelmetHook } from "../../custom/useHelmetHook";
+import { app } from "../../utils/firebase";
 
 export default function Register() {
   const helmetTitle = useHelmetHook("Register");
@@ -66,7 +67,7 @@ export default function Register() {
   };
 
   const UploadFileToFirebase = (file) => {
-    const storage = getStorage();
+    const storage = getStorage(app);
     const storageRef = ref(storage, new Date().getTime() + file.name);
     const uploadTask = uploadBytesResumable(storageRef, file);
     setRegisterData((prev) => ({ ...prev, image: "" }));
